@@ -45,6 +45,7 @@ class RFYCoverManager: NSObject {
         windows.forEach({ (win) in
             win?.setFrame(CGRect.init(x: 0, y: 0, width: 0, height: 0), display: false)
         })
+        RFYTimerManager.shared.startWork()
     }
     
     func printWindows() {

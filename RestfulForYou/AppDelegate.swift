@@ -14,6 +14,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         addStatusItem()
+        RFYTimerManager.shared
+//        NSApp.presentationOptions = [.fullScreen, .hideDock]
         RFYCoverManager.shared.startWorking()
 
     }
@@ -39,6 +41,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         statusItem.menu = subMenu
         
         self.statusItem = statusItem
+        NSMenu.setMenuBarVisible(false)
+
     }
     
     @objc func statusItemMenuFirst() {

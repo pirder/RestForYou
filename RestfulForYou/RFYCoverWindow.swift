@@ -15,6 +15,20 @@ class RFYCoverWindow: NSWindow {
     }
     
     func initUI(){
-        
+        self.contentView?.addSubview(button)
+        button.action = #selector(buttonTouchinside)
+        button.target = self
+        button.snp.makeConstraints { (make) in
+            make.center.equalToSuperview()
+        }
+    }
+    
+    lazy var button: NSButton = {
+        let btn = NSButton()
+        return btn
+    }()
+    
+    @objc func buttonTouchinside(){
+        RFYCoverManager.shared.stopWork()
     }
 }
