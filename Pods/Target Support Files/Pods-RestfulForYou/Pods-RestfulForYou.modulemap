@@ -1,0 +1,6 @@
+framework module Pods_RestfulForYou {
+  umbrella header "Pods-RestfulForYou-umbrella.h"
+
+  export *
+  module * { export * }
+}

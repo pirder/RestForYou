@@ -6,21 +6,30 @@
 //
 
 import Cocoa
+import SnapKit
 
 class ViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.view.frame = NSRect(x: 0, y: 0, width: 0, height: 0)
+        self.view.addSubview(closeButton)
+        closeButton.snp.makeConstraints { (make) in
+            
+        }
+        
     }
+    
+    lazy var closeButton:NSButton = {
+        let button = NSButton.init()
+        return button
+    }()
 
     override var representedObject: Any? {
         didSet {
         // Update the view, if already loaded.
         }
     }
-
 
 }
 

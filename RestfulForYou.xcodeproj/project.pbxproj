@@ -3,16 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5853AC604A6F5D29A9223137 /* Pods_RestfulForYou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A80CBBD7B19FC62064135A89 /* Pods_RestfulForYou.framework */; };
 		6A36E84F27045A3A00FB8C7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A36E84E27045A3A00FB8C7D /* AppDelegate.swift */; };
 		6A36E85127045A3A00FB8C7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A36E85027045A3A00FB8C7D /* ViewController.swift */; };
 		6A36E85327045A3B00FB8C7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A36E85227045A3B00FB8C7D /* Assets.xcassets */; };
 		6A36E85627045A3B00FB8C7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A36E85427045A3B00FB8C7D /* Main.storyboard */; };
 		6A36E86227045A3B00FB8C7D /* RestfulForYouTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A36E86127045A3B00FB8C7D /* RestfulForYouTests.swift */; };
 		6A36E86D27045A3C00FB8C7D /* RestfulForYouUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A36E86C27045A3C00FB8C7D /* RestfulForYouUITests.swift */; };
+		6A78FA6C270461DD00F63DFE /* RFYWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A78FA6B270461DD00F63DFE /* RFYWindowController.swift */; };
+		6A78FA842704886600F63DFE /* RFYCoverManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A78FA832704886600F63DFE /* RFYCoverManager.swift */; };
+		6A78FA8F27048EDF00F63DFE /* RFYCoverWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A78FA8E27048EDF00F63DFE /* RFYCoverWindow.swift */; };
+		946B9AFA1126D93B75575BFF /* Pods_RestfulForYouTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1F2811ADC40429771686D0F /* Pods_RestfulForYouTests.framework */; };
+		A78E721DDA3A60BC9273AB83 /* Pods_RestfulForYou_RestfulForYouUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13E2A331A6D7DC9D98EB9315 /* Pods_RestfulForYou_RestfulForYouUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13E2A331A6D7DC9D98EB9315 /* Pods_RestfulForYou_RestfulForYouUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RestfulForYou_RestfulForYouUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23D226A7C5BD8C3909DE3C75 /* Pods-RestfulForYou-RestfulForYouUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestfulForYou-RestfulForYouUITests.release.xcconfig"; path = "Target Support Files/Pods-RestfulForYou-RestfulForYouUITests/Pods-RestfulForYou-RestfulForYouUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3FFA75E01BB1BC70E2E678E9 /* Pods-RestfulForYou-RestfulForYouUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestfulForYou-RestfulForYouUITests.debug.xcconfig"; path = "Target Support Files/Pods-RestfulForYou-RestfulForYouUITests/Pods-RestfulForYou-RestfulForYouUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6A36E84B27045A3A00FB8C7D /* RestfulForYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestfulForYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A36E84E27045A3A00FB8C7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A36E85027045A3A00FB8C7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +55,15 @@
 		6A36E86827045A3C00FB8C7D /* RestfulForYouUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestfulForYouUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A36E86C27045A3C00FB8C7D /* RestfulForYouUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestfulForYouUITests.swift; sourceTree = "<group>"; };
 		6A36E86E27045A3C00FB8C7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A78FA6B270461DD00F63DFE /* RFYWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RFYWindowController.swift; sourceTree = "<group>"; };
+		6A78FA832704886600F63DFE /* RFYCoverManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RFYCoverManager.swift; sourceTree = "<group>"; };
+		6A78FA8E27048EDF00F63DFE /* RFYCoverWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RFYCoverWindow.swift; sourceTree = "<group>"; };
+		7000C3B1F75FB2EE741F3AD5 /* Pods-RestfulForYouTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestfulForYouTests.debug.xcconfig"; path = "Target Support Files/Pods-RestfulForYouTests/Pods-RestfulForYouTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A80CBBD7B19FC62064135A89 /* Pods_RestfulForYou.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RestfulForYou.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB16425BE226DFE5A453D07F /* Pods-RestfulForYouTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestfulForYouTests.release.xcconfig"; path = "Target Support Files/Pods-RestfulForYouTests/Pods-RestfulForYouTests.release.xcconfig"; sourceTree = "<group>"; };
+		E04C0E8979476F6F00E6602E /* Pods-RestfulForYou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestfulForYou.debug.xcconfig"; path = "Target Support Files/Pods-RestfulForYou/Pods-RestfulForYou.debug.xcconfig"; sourceTree = "<group>"; };
+		E1F2811ADC40429771686D0F /* Pods_RestfulForYouTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RestfulForYouTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC72A92AB10D705D180C9378 /* Pods-RestfulForYou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RestfulForYou.release.xcconfig"; path = "Target Support Files/Pods-RestfulForYou/Pods-RestfulForYou.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5853AC604A6F5D29A9223137 /* Pods_RestfulForYou.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				946B9AFA1126D93B75575BFF /* Pods_RestfulForYouTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,12 +87,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A78E721DDA3A60BC9273AB83 /* Pods_RestfulForYou_RestfulForYouUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		691A18E0549C91A8E06E7D1A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E04C0E8979476F6F00E6602E /* Pods-RestfulForYou.debug.xcconfig */,
+				EC72A92AB10D705D180C9378 /* Pods-RestfulForYou.release.xcconfig */,
+				3FFA75E01BB1BC70E2E678E9 /* Pods-RestfulForYou-RestfulForYouUITests.debug.xcconfig */,
+				23D226A7C5BD8C3909DE3C75 /* Pods-RestfulForYou-RestfulForYouUITests.release.xcconfig */,
+				7000C3B1F75FB2EE741F3AD5 /* Pods-RestfulForYouTests.debug.xcconfig */,
+				DB16425BE226DFE5A453D07F /* Pods-RestfulForYouTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		6A36E84227045A3A00FB8C7D = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +114,8 @@
 				6A36E86027045A3B00FB8C7D /* RestfulForYouTests */,
 				6A36E86B27045A3C00FB8C7D /* RestfulForYouUITests */,
 				6A36E84C27045A3A00FB8C7D /* Products */,
+				691A18E0549C91A8E06E7D1A /* Pods */,
+				CDE91AD1DB6FFAA6B5952870 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +134,9 @@
 			children = (
 				6A36E84E27045A3A00FB8C7D /* AppDelegate.swift */,
 				6A36E85027045A3A00FB8C7D /* ViewController.swift */,
+				6A78FA832704886600F63DFE /* RFYCoverManager.swift */,
+				6A78FA6B270461DD00F63DFE /* RFYWindowController.swift */,
+				6A78FA8E27048EDF00F63DFE /* RFYCoverWindow.swift */,
 				6A36E85227045A3B00FB8C7D /* Assets.xcassets */,
 				6A36E85427045A3B00FB8C7D /* Main.storyboard */,
 				6A36E85727045A3B00FB8C7D /* Info.plist */,
@@ -124,6 +163,16 @@
 			path = RestfulForYouUITests;
 			sourceTree = "<group>";
 		};
+		CDE91AD1DB6FFAA6B5952870 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A80CBBD7B19FC62064135A89 /* Pods_RestfulForYou.framework */,
+				13E2A331A6D7DC9D98EB9315 /* Pods_RestfulForYou_RestfulForYouUITests.framework */,
+				E1F2811ADC40429771686D0F /* Pods_RestfulForYouTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -131,9 +180,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A36E87127045A3C00FB8C7D /* Build configuration list for PBXNativeTarget "RestfulForYou" */;
 			buildPhases = (
+				85B87952C6F4A1C719EB81F5 /* [CP] Check Pods Manifest.lock */,
 				6A36E84727045A3A00FB8C7D /* Sources */,
 				6A36E84827045A3A00FB8C7D /* Frameworks */,
 				6A36E84927045A3A00FB8C7D /* Resources */,
+				99950035E270469DF8BD13C8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,6 +199,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A36E87427045A3C00FB8C7D /* Build configuration list for PBXNativeTarget "RestfulForYouTests" */;
 			buildPhases = (
+				8156BF49828A80FED679BFD7 /* [CP] Check Pods Manifest.lock */,
 				6A36E85927045A3B00FB8C7D /* Sources */,
 				6A36E85A27045A3B00FB8C7D /* Frameworks */,
 				6A36E85B27045A3B00FB8C7D /* Resources */,
@@ -166,9 +218,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A36E87727045A3C00FB8C7D /* Build configuration list for PBXNativeTarget "RestfulForYouUITests" */;
 			buildPhases = (
+				BFF8A9DC8BA17EDC01425822 /* [CP] Check Pods Manifest.lock */,
 				6A36E86427045A3C00FB8C7D /* Sources */,
 				6A36E86527045A3C00FB8C7D /* Frameworks */,
 				6A36E86627045A3C00FB8C7D /* Resources */,
+				981E683819878979DC1BE912 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -248,13 +302,119 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8156BF49828A80FED679BFD7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RestfulForYouTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85B87952C6F4A1C719EB81F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RestfulForYou-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		981E683819878979DC1BE912 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RestfulForYou-RestfulForYouUITests/Pods-RestfulForYou-RestfulForYouUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RestfulForYou-RestfulForYouUITests/Pods-RestfulForYou-RestfulForYouUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RestfulForYou-RestfulForYouUITests/Pods-RestfulForYou-RestfulForYouUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99950035E270469DF8BD13C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RestfulForYou/Pods-RestfulForYou-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RestfulForYou/Pods-RestfulForYou-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RestfulForYou/Pods-RestfulForYou-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFF8A9DC8BA17EDC01425822 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RestfulForYou-RestfulForYouUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6A36E84727045A3A00FB8C7D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				6A36E85127045A3A00FB8C7D /* ViewController.swift in Sources */,
+				6A78FA8F27048EDF00F63DFE /* RFYCoverWindow.swift in Sources */,
+				6A78FA6C270461DD00F63DFE /* RFYWindowController.swift in Sources */,
 				6A36E84F27045A3A00FB8C7D /* AppDelegate.swift in Sources */,
+				6A78FA842704886600F63DFE /* RFYCoverManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +578,7 @@
 		};
 		6A36E87227045A3C00FB8C7D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E04C0E8979476F6F00E6602E /* Pods-RestfulForYou.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -431,6 +592,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = priders.RestfulForYou;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -439,6 +601,7 @@
 		};
 		6A36E87327045A3C00FB8C7D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC72A92AB10D705D180C9378 /* Pods-RestfulForYou.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +615,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_BUNDLE_IDENTIFIER = priders.RestfulForYou;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -460,6 +624,7 @@
 		};
 		6A36E87527045A3C00FB8C7D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7000C3B1F75FB2EE741F3AD5 /* Pods-RestfulForYouTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -482,6 +647,7 @@
 		};
 		6A36E87627045A3C00FB8C7D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB16425BE226DFE5A453D07F /* Pods-RestfulForYouTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -504,6 +670,7 @@
 		};
 		6A36E87827045A3C00FB8C7D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FFA75E01BB1BC70E2E678E9 /* Pods-RestfulForYou-RestfulForYouUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -524,6 +691,7 @@
 		};
 		6A36E87927045A3C00FB8C7D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23D226A7C5BD8C3909DE3C75 /* Pods-RestfulForYou-RestfulForYouUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
