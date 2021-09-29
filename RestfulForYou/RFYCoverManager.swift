@@ -18,30 +18,39 @@ class RFYCoverManager: NSObject {
     }
     
     func startWorking() {
+        var index = 0
         NSScreen.screens.forEach { (screen) in
-            let style = RFYCoverWindow.StyleMask.init(rawValue: 0)
-            let win = RFYCoverWindow.init(contentRect: screen.frame, styleMask: style, backing: .buffered, defer: true, screen: screen)
-//            win.level = NSWindow.Level(rawValue: 21)
-            win.makeKeyAndOrderFront(self)
-            win.setFrameOrigin(screen.visibleFrame.origin)
-            weak var weakWin = win
-            addWindow(window: weakWin)
-            printWindows()
+            if index < windows.count {
+                windows[index]?.setFrame(screen.visibleFrame, display: true)
+            } else {
+                createWindow(screen: screen)
+            }
+            index+=1
         }
+    }
+    
+    func createWindow(screen:NSScreen) {
+        let style = RFYCoverWindow.StyleMask.init(rawValue: 0)
+        let win = RFYCoverWindow.init(contentRect: screen.frame, styleMask: style, backing: .buffered, defer: true, screen: screen)
+//        win.level = NSWindow.Level(rawValue: 21)
+        weak var weakSelf = self
+        win.makeKeyAndOrderFront(weakSelf)
+        win.setFrameOrigin(screen.visibleFrame.origin)
+        weak var weakWin = win
+        addWindow(window: weakWin)
+        printWindows()
     }
     
     func stopWork() {
         windows.forEach({ (win) in
-            win?.close()
+            win?.setFrame(CGRect.init(x: 0, y: 0, width: 0, height: 0), display: false)
         })
     }
     
     func printWindows() {
         print(windows)
     }
-
-
-
+    
     private func addWindow(window: RFYCoverWindow?) {
         windows.append(window)
     }

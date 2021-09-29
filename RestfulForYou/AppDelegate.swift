@@ -46,7 +46,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     @objc func statusItemMenuSecond() {
-        RFYCoverManager.shared.printWindows()
+        RFYCoverManager.shared.startWorking()
     }
 
     @objc func statusItemMenuLast() {
