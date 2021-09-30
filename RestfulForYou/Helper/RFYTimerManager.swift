@@ -88,7 +88,6 @@ class RFYTimerManager: NSObject {
         let second = total
         let hourStr = hour > 0 ? "\(String.init(format: "%.2d", hour)):" : ""
         let result = "\(hourStr)\(String.init(format: "%.2d", min)):\(String.init(format: "%.2d", second))"
-        print(result)
         return result
     }
     

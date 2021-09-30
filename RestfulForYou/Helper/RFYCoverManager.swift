@@ -33,6 +33,9 @@ class RFYCoverManager: NSObject {
         let style = RFYCoverWindow.StyleMask.init(rawValue: 0)
         let win = RFYCoverWindow.init(contentRect: screen.frame, styleMask: style, backing: .buffered, defer: true, screen: screen)
         win.level = NSWindow.Level.floating
+        if let img =  NSImage.desktopPictures().first,let image = img {
+            win.backgroundImage.image = NSImage.init(cgImage: image, size: NSSize(width: screen.visibleFrame.size.width , height: screen.visibleFrame.size.height))
+        }
         weak var weakSelf = self
         win.makeKeyAndOrderFront(weakSelf)
         win.setFrameOrigin(screen.visibleFrame.origin)
@@ -54,4 +57,36 @@ class RFYCoverManager: NSObject {
     private func removeAllWindows()  {
         windows.removeAll()
     }
+}
+
+extension NSImage {
+    
+    static func desktopPictures() -> [CGImage?] {
+        
+        let info = CGWindowListCopyWindowInfo(.optionOnScreenOnly, kCGNullWindowID) as? [[ String : Any]]
+        
+        var images = [CGImage?]()
+        
+        for window in info! {
+            
+            // we need windows named like "Desktop Picture %"
+            if let name = window["kCGWindowName"] as? String {
+                let key = "Desktop Picture"
+                if !name.hasPrefix(key) {
+                    continue
+                }
+                
+                // this belongs to a screen
+                let index = window["kCGWindowNumber"] as! CGWindowID
+                print(CGRect.infinite)
+                let cgImage = CGWindowListCreateImage(CGRect.null, CGWindowListOption(arrayLiteral: CGWindowListOption.optionIncludingWindow), index, CGWindowImageOption.nominalResolution)
+                images.append(cgImage)
+                
+            }
+        }
+        
+        // return the array of Desktop images
+        return images
+    }
+    
 }

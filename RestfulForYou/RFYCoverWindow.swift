@@ -8,7 +8,7 @@
 import Cocoa
 
 class RFYCoverWindow: NSWindow {
-    
+        
     override init(contentRect: NSRect, styleMask style: NSWindow.StyleMask, backing backingStoreType: NSWindow.BackingStoreType, defer flag: Bool) {
         super.init(contentRect: contentRect, styleMask: style, backing: backingStoreType, defer: flag)
         initUI()
@@ -16,11 +16,15 @@ class RFYCoverWindow: NSWindow {
     
     
     func initUI(){
+        self.contentView?.addSubview(backgroundImage)
         self.contentView?.addSubview(button)
         self.contentView?.addSubview(label)
         
         button.action = #selector(buttonTouchinside)
         button.target = self
+        backgroundImage.snp.makeConstraints { (make) in
+            make.edges.equalToSuperview()
+        }
         button.snp.makeConstraints { (make) in
             make.center.equalToSuperview()
         }
@@ -37,7 +41,7 @@ class RFYCoverWindow: NSWindow {
     }
     
     lazy var button: NSButton = {
-        let btn = NSButton() 
+        let btn = NSButton()
         btn.title = "I want to work for myself"
         return btn
     }()
@@ -46,6 +50,12 @@ class RFYCoverWindow: NSWindow {
         let textF = NSTextView.init()
         textF.alignment = .center
         return textF
+    }()
+    
+    lazy var backgroundImage: NSImageView = {
+        let view = NSImageView()
+        view.imageScaling = .scaleAxesIndependently
+        return view
     }()
     
     @objc func buttonTouchinside(){
