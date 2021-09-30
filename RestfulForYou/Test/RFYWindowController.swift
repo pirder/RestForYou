@@ -8,7 +8,7 @@
 import Cocoa
 
 class RFYWindowController: NSWindowController {
-
+    
     override func windowDidLoad() {
         super.windowDidLoad()
     }

@@ -18,7 +18,7 @@ class RFYCoverWindow: NSWindow {
     func initUI(){
         self.contentView?.addSubview(button)
         self.contentView?.addSubview(label)
-
+        
         button.action = #selector(buttonTouchinside)
         button.target = self
         button.snp.makeConstraints { (make) in
@@ -29,18 +29,16 @@ class RFYCoverWindow: NSWindow {
             make.bottom.equalTo(button.snp.top).offset(-19)
             make.size.equalTo(CGSize(width: 200, height: 20))
         }
-        label.string = "sss"
+        
         weak var WSelf = self
         if let StrongSelf = WSelf {
             RFYTimerManager.shared.addObserver(StrongSelf, forKeyPath: "restCountDown", options: [.new], context: nil)
         }
-        
-        
     }
     
     lazy var button: NSButton = {
         let btn = NSButton() 
-        btn.title = "I'm want to Working"
+        btn.title = "I'm want to work for myself"
         return btn
     }()
     
@@ -86,5 +84,5 @@ extension Int {
         print(result)
         return result
     }
-
+    
 }

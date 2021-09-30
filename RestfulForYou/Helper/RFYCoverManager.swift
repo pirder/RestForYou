@@ -46,7 +46,7 @@ class RFYCoverManager: NSObject {
         })
         RFYTimerManager.shared.open(By: 60 * min)
     }
-        
+    
     private func addWindow(window: RFYCoverWindow?) {
         windows.append(window)
     }

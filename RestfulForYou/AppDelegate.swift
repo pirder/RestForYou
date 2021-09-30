@@ -9,18 +9,18 @@ import Cocoa
 
 @main
 class AppDelegate: NSObject, NSApplicationDelegate {
-
+    
     var statusItem = NSStatusItem()
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         addStatusItem()
-//        NSApp.presentationOptions = [.fullScreen, .hideDock]
+        //        NSApp.presentationOptions = [.fullScreen, .hideDock]
         RFYCoverManager.shared.start()
-
+        
     }
-
+    
     fileprivate func addStatusItem() {
-        // Insert code here to initialize your application
+        
         let statusBar = NSStatusBar.system
         let statusItem = statusBar.statusItem(withLength: 100)
         let itemImage = NSImage.init(named: "statusItemIcon")
@@ -37,14 +37,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         subMenu.addItem(withTitle: "add 60 minutes", action: #selector(statusItemMenu5), keyEquivalent: "5")
         subMenu.addItem(withTitle: "reduce 15 minutes", action: #selector(statusItemMenu6), keyEquivalent: "6")
         subMenu.addItem(withTitle: "reduce 5 minutes", action: #selector(statusItemMenu7), keyEquivalent: "7")
-
+        
         subMenu.addItem(withTitle: "Exit", action: #selector(statusItemMenuLast), keyEquivalent: "Q")
-
+        
         statusItem.menu = subMenu
         
         self.statusItem = statusItem
         NSMenu.setMenuBarVisible(false)
-
+        
     }
     
     @objc func statusItemMenuFirst() {
@@ -67,15 +67,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @objc func statusItemMenu6() {
         RFYTimerManager.shared.addTime(By: -15)
     }
-
+    
     @objc func statusItemMenu7() {
         RFYTimerManager.shared.addTime(By: -5)
     }
-
-
+    
+    
     @objc func statusItemMenuLast() {
         NSApp.terminate(self)
     }
-
+    
 }
 

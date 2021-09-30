@@ -19,7 +19,7 @@ class RFYTimerManager: NSObject {
     private var timer: Timer?
     private var countDown:Int = 0
     @objc dynamic private(set) var restCountDown:Int = 0
-
+    
     private var status:TimerStatus = .Work
     
     private override init() {
@@ -51,7 +51,7 @@ class RFYTimerManager: NSObject {
         }
         restCountDown-=1
     }
-
+    
     
     
     func close(){
@@ -76,7 +76,7 @@ class RFYTimerManager: NSObject {
         RunLoop.main.add(timer!, forMode: .common)
         countDown = Int(time)
         restCountDown = Int(time)
-
+        
     }
     
     private func getTimeString() -> String {
