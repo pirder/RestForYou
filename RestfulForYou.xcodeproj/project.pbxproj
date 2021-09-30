@@ -109,13 +109,6 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		6A1BAF042704C60A001B3649 /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helper;
-			sourceTree = "<group>";
-		};
 		6A36E84227045A3A00FB8C7D = {
 			isa = PBXGroup;
 			children = (
@@ -142,12 +135,9 @@
 			isa = PBXGroup;
 			children = (
 				6A36E84E27045A3A00FB8C7D /* AppDelegate.swift */,
-				6A36E85027045A3A00FB8C7D /* ViewController.swift */,
-				6A78FA832704886600F63DFE /* RFYCoverManager.swift */,
-				6A1BAF052704C62F001B3649 /* RFYTimerManager.swift */,
-				6A1BAF042704C60A001B3649 /* Helper */,
-				6A78FA6B270461DD00F63DFE /* RFYWindowController.swift */,
 				6A78FA8E27048EDF00F63DFE /* RFYCoverWindow.swift */,
+				6A78FAAF2705B0EE00F63DFE /* Helper */,
+				6A78FAAB2705B0D600F63DFE /* Test */,
 				6A36E85227045A3B00FB8C7D /* Assets.xcassets */,
 				6A36E85427045A3B00FB8C7D /* Main.storyboard */,
 				6A36E85727045A3B00FB8C7D /* Info.plist */,
@@ -172,6 +162,24 @@
 				6A36E86E27045A3C00FB8C7D /* Info.plist */,
 			);
 			path = RestfulForYouUITests;
+			sourceTree = "<group>";
+		};
+		6A78FAAB2705B0D600F63DFE /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				6A78FA6B270461DD00F63DFE /* RFYWindowController.swift */,
+				6A36E85027045A3A00FB8C7D /* ViewController.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		6A78FAAF2705B0EE00F63DFE /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				6A78FA832704886600F63DFE /* RFYCoverManager.swift */,
+				6A1BAF052704C62F001B3649 /* RFYTimerManager.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		CDE91AD1DB6FFAA6B5952870 /* Frameworks */ = {

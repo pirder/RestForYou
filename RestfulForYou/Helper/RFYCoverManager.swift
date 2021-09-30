@@ -6,7 +6,7 @@
 //
 
 import Cocoa
-
+//负责处理UI
 class RFYCoverManager: NSObject {
     
     private var windows = [RFYCoverWindow?]()
@@ -17,7 +17,7 @@ class RFYCoverManager: NSObject {
         super.init()
     }
     
-    func startWorking() {
+    func stop() {
         var index = 0
         NSScreen.screens.forEach { (screen) in
             if index < windows.count {
@@ -32,26 +32,21 @@ class RFYCoverManager: NSObject {
     func createWindow(screen:NSScreen) {
         let style = RFYCoverWindow.StyleMask.init(rawValue: 0)
         let win = RFYCoverWindow.init(contentRect: screen.frame, styleMask: style, backing: .buffered, defer: true, screen: screen)
-//        win.level = NSWindow.Level(rawValue: 21)
+        win.level = NSWindow.Level.floating
         weak var weakSelf = self
         win.makeKeyAndOrderFront(weakSelf)
         win.setFrameOrigin(screen.visibleFrame.origin)
         weak var weakWin = win
         addWindow(window: weakWin)
-        printWindows()
     }
     
-    func stopWork() {
+    func start(ByMin min: TimeInterval = 45) {
         windows.forEach({ (win) in
             win?.setFrame(CGRect.init(x: 0, y: 0, width: 0, height: 0), display: false)
         })
-        RFYTimerManager.shared.startWork()
+        RFYTimerManager.shared.open(By: 60 * min)
     }
-    
-    func printWindows() {
-        print(windows)
-    }
-    
+        
     private func addWindow(window: RFYCoverWindow?) {
         windows.append(window)
     }
