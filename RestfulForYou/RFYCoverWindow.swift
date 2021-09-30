@@ -38,7 +38,7 @@ class RFYCoverWindow: NSWindow {
     
     lazy var button: NSButton = {
         let btn = NSButton() 
-        btn.title = "I'm want to work for myself"
+        btn.title = "I want to work for myself"
         return btn
     }()
     
