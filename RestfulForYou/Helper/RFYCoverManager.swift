@@ -30,9 +30,9 @@ class RFYCoverManager: NSObject {
     }
     
     func createWindow(screen:NSScreen) {
-        let style = RFYCoverWindow.StyleMask.init(rawValue: 0)
+        let style = NSWindow.StyleMask.fullSizeContentView
         let win = RFYCoverWindow.init(contentRect: screen.frame, styleMask: style, backing: .buffered, defer: true, screen: screen)
-        win.level = NSWindow.Level.floating
+        win.level = NSWindow.Level.popUpMenu
         if let img =  NSImage.desktopPictures().first,let image = img {
             win.backgroundImage.image = NSImage.init(cgImage: image, size: NSSize(width: screen.visibleFrame.size.width , height: screen.visibleFrame.size.height))
         }

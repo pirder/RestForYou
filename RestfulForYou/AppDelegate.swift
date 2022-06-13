@@ -30,6 +30,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         
         let subMenu = NSMenu.init(title: "NSMenu1")
+        subMenu.addItem(withTitle: "preferences", action: #selector(preferences), keyEquivalent: "")
         subMenu.addItem(withTitle: "Rest Now", action: #selector(statusItemMenuFirst), keyEquivalent: "1")
         subMenu.addItem(withTitle: "add 5 minutes", action: #selector(statusItemMenu2), keyEquivalent: "2")
         subMenu.addItem(withTitle: "add 10 minutes", action: #selector(statusItemMenu3), keyEquivalent: "3")
@@ -70,6 +71,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     @objc func statusItemMenu7() {
         RFYTimerManager.shared.addTime(By: -5)
+    }
+    
+    @objc func preferences() {
+        PreferencesWindow.addWindow()
     }
     
     
